@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feliz cumpleaños, Jerrica</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<canvas id="fx"></canvas>
+<div class="blobs" aria-hidden="true"><b></b><b></b><b></b></div>
+<div class="sparkles" id="sparkles" aria-hidden="true"></div>
+<button class="theme" id="theme">Modo oscuro</button>
+
+<section class="hero">
+  <div class="eyebrow">Dieciséis de octubre</div>
+  <h1>Feliz cumpleaños,<br><em>Jerrica</em></h1>
+  <span class="rule"></span>
+  <p>Que este nuevo año venga acompañado de serenidad, alegría y todo aquello que deseas para ti.</p>
+  <button class="cake" id="cake" aria-label="Soplar la vela">
+    <svg viewBox="0 0 200 190" aria-hidden="true">
+      <g class="flame"><path d="M100 14c10 14 14 22 0 36-14-14-10-22 0-36z" fill="#ecd9a0"/><path d="M100 28c5 8 6 12 0 19-6-7-5-11 0-19z" fill="#fff6c9"/></g>
+      <rect x="96" y="48" width="8" height="26" rx="3" fill="#b79cf0"/>
+      <rect x="40" y="74" width="120" height="44" rx="14" fill="#fbf3dc"/>
+      <path d="M40 92q15 14 30 0t30 0 30 0 30 0v-6a14 14 0 0 0-14-12H54a14 14 0 0 0-14 12z" fill="#fff"/>
+      <rect x="24" y="118" width="152" height="52" rx="16" fill="#a083de"/>
+      <path d="M24 138q19 14 38 0t38 0 38 0 38 0v-6H24z" fill="#ece3fa"/>
+      <circle cx="70" cy="156" r="4.5" fill="#fbf3dc"/><circle cx="100" cy="158" r="4.5" fill="#fff"/><circle cx="130" cy="156" r="4.5" fill="#fbf3dc"/>
+    </svg>
+  </button>
+  <div class="hint" id="hint">Toca el pastel para soplar la vela</div>
+</section>
+
+<section>
+  <h2>Un día para recordar</h2>
+  <p class="sub">Octubre de 2026. Explora el calendario y encuentra la fecha especial.</p>
+  <div class="cal">
+    <div class="cal-head"><button class="nav" id="prev" aria-label="Mes anterior">&#8249;</button><h3 id="mes"></h3><button class="nav" id="next" aria-label="Mes siguiente">&#8250;</button></div>
+    <div class="grid" id="grid"></div>
+    <div class="note" id="note">El 16 de octubre es el día de Jerrica.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Tres deseos para ti</h2>
+  <p class="sub">Voltea cada tarjeta para leerla.</p>
+  <div class="cards">
+    <button class="card"><div class="inner"><div class="face front"><svg viewBox="0 0 48 48"><path d="M24 40C10 30 6 22 6 16a9 9 0 0 1 18-2 9 9 0 0 1 18 2c0 6-4 14-18 24z"/></svg><span>Para tu corazón</span></div><div class="face back">Que siempre tengas cerca a quienes te abrazan fuerte y te recuerdan cuánto vales.</div></div></button>
+    <button class="card"><div class="inner"><div class="face front"><svg viewBox="0 0 48 48"><path d="M24 4l5 14 15 2-11 10 3 14-12-8-12 8 3-14L4 20l15-2z"/></svg><span>Para tus sueños</span></div><div class="face back">Que cada meta que te propongas se acomode a tu favor y llegues más lejos de lo que imaginas.</div></div></button>
+    <button class="card"><div class="inner"><div class="face front"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="6"/><ellipse cx="24" cy="10" rx="5" ry="8"/><ellipse cx="24" cy="38" rx="5" ry="8"/><ellipse cx="10" cy="24" rx="8" ry="5"/><ellipse cx="38" cy="24" rx="8" ry="5"/></svg><span>Para tu alegría</span></div><div class="face back">Que nunca falten los días tranquilos, la música que te gusta y motivos para reír sin pausa.</div></div></button>
+  </div>
+</section>
+
+<section class="jar">
+  <h2>El frasco de deseos</h2>
+  <p class="sub">Descubre un mensaje cada vez que lo desees.</p>
+  <button class="btn" id="jarBtn">Sacar un deseo</button>
+  <div class="wish" id="wish">Tu mensaje aparecerá aquí.</div>
+</section>
+
+<section>
+  <h2>Una carta para ti</h2>
+  <p class="sub">&nbsp;</p>
+  <div class="letter">
+    <p class="to">Querida Jerrica:</p>
+    <p>Hoy es tu día, y quise dedicarte algo tan especial como tú. Gracias por ser quien eres: alguien tam unica y especial, apesar de que hablemos poco eres alguien maravillosa.</p>
+    <p>Deseo que este año te regale momentos serenos y hermosos, nuevas aventuras y la certeza de estar exactamente donde debes. Mereces todo lo bueno que viene en camino.</p>
+    <p>Pasatelo muy bonito en tu dia te kierom (con todo y tuz cambios de humor KJASKJALKJASKJA).</p>
+    <p class="sign">Con todo mi cariño</p>
+  </div>
+</section>
+
+<footer>Para Jerrica, con cariño. 16 de octubre.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
